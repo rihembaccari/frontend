@@ -1,0 +1,35 @@
+.bg-shape {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 55%;
+  height: 100vh;
+  background: linear-gradient(160deg, #0d6e5a 0%, #064535 60%, #021a14 100%);
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+  z-index: 0;
+}
+
+.bg-pattern {
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 30% 30%, rgba(255,255,255,0.04) 0%, transparent 50%),
+    repeating-linear-gradient(
+      45deg,
+      rgba(255,255,255,0.015) 0px,
+      rgba(255,255,255,0.015) 1px,
+      transparent 1px,
+      transparent 20px
+    );
+  pointer-events: none;
+}
+
+.float-circle {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.fc1 { width: 200px; height: 200px; top: 10%;  right: 5%;  }
+.fc2 { width: 120px; height: 120px; bottom: 20%; right: 20%; }
+.fc3 { width: 300px; height: 300px; top: 40%;  right: -8%; }

@@ -1,0 +1,42 @@
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 2.5rem;
+}
+
+.logo-hex {
+  width: 38px;
+  height: 38px;
+  background: var(--teal);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: white;
+  letter-spacing: -0.03em;
+}
+
+.logo-text {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--ink);
+}
+
+.logo-text em {
+  font-style: normal;
+  color: var(--teal);
+}
+
+.logo-badge {
+  font-size: 0.55rem;
+  background: var(--mint);
+  color: var(--teal);
+  padding: 0.15rem 0.45rem;
+  border-radius: 20px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  margin-left: 0.3rem;
+}

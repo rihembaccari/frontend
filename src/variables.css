@@ -1,0 +1,39 @@
+/* ================================================================
+   variables.css — ClinisysERP GestionPro — Animated UI v2
+   ================================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  --c:       #C1622A;
+  --cd:      #A04E20;
+  --cl:      #FEF3EC;
+  --cb:      #F0C4A8;
+  --c-sh:    rgba(193,98,42,0.22);
+  --c2:      #4A7FA5;
+  --c2l:     #EBF4FA;
+  --c2b:     #BAD4E8;
+  --navy:    #0D1B2A;
+  --bg:      #F2F4F7;
+  --surf:    #FFFFFF;
+  --bord:    rgba(0,0,0,0.08);
+  --t1:      #0F172A;
+  --t2:      #475569;
+  --t3:      #94A3B8;
+  --green:   #16A34A; --greenl: #DCFCE7;
+  --red:     #DC2626; --redl:   #FEE2E2;
+  --amber:   #D97706; --amberl: #FEF9C3;
+  --purple:  #7C3AED; --purplel:#F5F3FF;
+  --topbar-h: 58px;
+  --radius:   10px;
+  --radius-lg:16px;
+  --font:    'Plus Jakarta Sans', system-ui, sans-serif;
+  --mono:    'JetBrains Mono', monospace;
+  --shadow-xs: 0 1px 2px rgba(0,0,0,.06);
+  --shadow-sm: 0 1px 6px rgba(0,0,0,.08);
+  --shadow:    0 4px 20px rgba(0,0,0,.09);
+  --shadow-lg: 0 8px 40px rgba(0,0,0,.12);
+  /* legacy aliases */
+  --blue: var(--c2); --blue-dark:#3A6A8C; --blue-light:var(--c2l); --blue-border:var(--c2b);
+  --orange:var(--c); --orange-dark:var(--cd); --orange-light:var(--cl); --orange-border:var(--cb);
+  --surface:var(--surf); --border:#e2e8f0; --text:var(--t1); --text-2:var(--t2); --text-3:var(--t3);
+}

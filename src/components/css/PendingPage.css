@@ -1,0 +1,82 @@
+.pending-root {
+  min-height: 100vh;
+  background: #f0f4f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.pending-card {
+  background: white;
+  border-radius: 12px;
+  padding: 3rem;
+  max-width: 480px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+}
+
+.pending-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.pending-title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #1a2420;
+  margin-bottom: 1rem;
+}
+
+.pending-sub {
+  font-size: 0.85rem;
+  color: #6b7f78;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.pending-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #fff8e1;
+  border: 1px solid #ffd54f;
+  color: #f57f17;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
+  margin-bottom: 2rem;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #f57f17;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.3; }
+}
+
+.pending-logout {
+  background: none;
+  border: 1.5px solid #dde8e4;
+  color: #6b7f78;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.6rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.pending-logout:hover {
+  border-color: #0d6e5a;
+  color: #0d6e5a;
+}

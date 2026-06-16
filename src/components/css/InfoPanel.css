@@ -1,0 +1,69 @@
+.card-right {
+  background: linear-gradient(160deg, #0d6e5a 0%, #064535 100%);
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  color: white;
+}
+
+.cr-pattern {
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(255,255,255,0.03) 0px,
+    rgba(255,255,255,0.03) 1px,
+    transparent 1px,
+    transparent 24px
+  );
+  pointer-events: none;
+}
+
+.cr-circle1 {
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.08);
+  top: -60px;
+  right: -60px;
+}
+
+.cr-circle2 {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.04);
+  bottom: 60px;
+  left: -40px;
+}
+
+.cr-top { position: relative; z-index: 1; }
+
+.cr-module-label {
+  font-size: 0.62rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  opacity: 0.5;
+  font-family: 'Inconsolata', monospace;
+  margin-bottom: 2rem;
+}
+
+.cr-title {
+  font-size: 1.65rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1.2rem;
+  font-style: italic;
+}
+
+.cr-desc {
+  font-size: 0.8rem;
+  opacity: 0.65;
+  line-height: 1.8;
+  font-weight: 300;
+}

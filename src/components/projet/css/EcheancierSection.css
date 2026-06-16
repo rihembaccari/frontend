@@ -1,0 +1,21 @@
+.echeancier-body {
+  padding: 1rem 0.5rem 0.5rem;
+}
+
+.echeancier-row {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.75rem;
+}
+
+.ec-libelle { flex: 2; }
+.ec-date    { flex: 1.2; }
+
+.ec-remove {
+  flex-shrink: 0;
+}
+
+.ec-add-btn {
+  margin-top: 0.5rem;
+}

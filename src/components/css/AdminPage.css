@@ -1,0 +1,121 @@
+.admin-root {
+  min-height: 100vh;
+  background: #f0f4f0;
+  padding: 2.5rem;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.admin-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #1a2420;
+  margin-bottom: 0.2rem;
+}
+
+.admin-sub {
+  font-size: 0.82rem;
+  color: #6b7f78;
+}
+
+.admin-logout {
+  background: none;
+  border: 1.5px solid #dde8e4;
+  color: #6b7f78;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.admin-logout:hover { border-color: #0d6e5a; color: #0d6e5a; }
+
+.admin-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  overflow: hidden;
+}
+
+.admin-loading,
+.admin-empty {
+  padding: 3rem;
+  text-align: center;
+  color: #6b7f78;
+  font-size: 0.9rem;
+}
+
+.admin-empty span { font-size: 2rem; display: block; margin-bottom: 0.5rem; }
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.admin-table th {
+  background: #f8faf9;
+  color: #6b7f78;
+  font-weight: 700;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.9rem 1.2rem;
+  text-align: left;
+  border-bottom: 1px solid #dde8e4;
+}
+
+.admin-table td {
+  padding: 0.9rem 1.2rem;
+  border-bottom: 1px solid #f0f4f0;
+  color: #1a2420;
+}
+
+.badge-pending {
+  background: #fff8e1;
+  color: #f57f17;
+  border: 1px solid #ffd54f;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: 100px;
+  letter-spacing: 0.06em;
+}
+
+.role-select {
+  border: 1.5px solid #dde8e4;
+  border-radius: 6px;
+  padding: 0.45rem 0.7rem;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.82rem;
+  color: #1a2420;
+  outline: none;
+  cursor: pointer;
+}
+
+.role-select:focus { border-color: #0d6e5a; }
+
+.assign-btn {
+  background: #0d6e5a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.45rem 1rem;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.assign-btn:hover    { background: #138a72; }
+.assign-btn:disabled { opacity: 0.5; cursor: not-allowed; }

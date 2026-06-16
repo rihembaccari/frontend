@@ -1,0 +1,99 @@
+/* rtl.css — Arabic RTL layout support
+   Import once in main.jsx after clinisys-overrides.css
+   Automatically activates when <html dir="rtl"> is set */
+
+[dir="rtl"] {
+  /* Topbar */
+  .cs-topbar { flex-direction: row-reverse; }
+  .cs-logo   { margin-right: 0; margin-left: 36px; }
+  .cs-nav    { flex-direction: row-reverse; }
+  .cs-topbar__right { flex-direction: row-reverse; margin-left: 0; margin-right: auto; }
+
+  /* Filter bars */
+  .gp-filterbar, .rq-filterbar, .ch-filterbar, .tk-filterbar {
+    flex-direction: row-reverse;
+  }
+  .gp-filterbar__search-ico, .rq-filter-search i, .tk-search-icon {
+    left: auto; right: 11px;
+  }
+  .gp-filterbar__input, .rq-search, .ch-search, .tk-filter-input {
+    padding-left: 12px; padding-right: 34px;
+    text-align: right;
+  }
+  .gp-filterbar__clear-x { left: 8px; right: auto; }
+  .gp-filterbar__meta { margin-left: 0; margin-right: auto; }
+
+  /* Tables */
+  .gp-th, .rq-th, .ch-th, .gp-td, .rq-td, .ch-td { text-align: right; }
+  .gp-th--actions, .rq-th--actions, .ch-th--actions,
+  .gp-td--actions, .rq-td--actions, .ch-td--actions { text-align: center; }
+  .gp-tr--active { border-left: none; border-right: 3px solid #C1622A; }
+
+  /* Toasts */
+  .toast-stack, .rq-toast-stack, .ch-toasts {
+    right: auto; left: 24px;
+  }
+  .toast { animation-name: slidein-rtl; }
+  @keyframes slidein-rtl {
+    from { transform: translateX(-120%); opacity: 0; }
+    to   { transform: none; opacity: 1; }
+  }
+
+  /* Modal headers */
+  .rq-modal__header, .ch-modal__header, .tk-modal__header,
+  .gp-modal__header, .cs-modal__hdr { flex-direction: row-reverse; }
+
+  /* Charter grid labels */
+  .ch-label, .rq-label, .tk-label, .gp-modal-field label {
+    text-align: right;
+    display: block;
+  }
+
+  /* Page headers */
+  .gp-toolbar, .rq-page-header, .ch-page-header {
+    flex-direction: row-reverse;
+  }
+
+  /* Select dropdown arrows — flip position */
+  .gp-filterbar__sel, .rq-sel, .ch-sel, .tk-filter-sel,
+  .ch-input.ch-input--sel, .tk-input.tk-input--sel,
+  .rq-input.rq-input--sel {
+    background-position: left 9px center;
+    padding-right: 12px;
+    padding-left: 28px;
+    text-align: right;
+  }
+
+  /* KPI grid */
+  .db-kpi-top { flex-direction: row-reverse; }
+  .db-proj-meta { flex-direction: row-reverse; }
+  .db-health { margin-left: 0; margin-right: auto; }
+
+  /* Card headers */
+  .db-card-header, .cs-card__hdr { flex-direction: row-reverse; }
+
+  /* Lang switcher dropdown */
+  .lang-dropdown { right: auto; left: 0; }
+  .lang-option { flex-direction: row-reverse; }
+
+  /* Active tag */
+  .gp-active-tag { margin-right: 0; margin-left: 7px; }
+
+  /* Section separators */
+  .ch-section-sep { flex-direction: row-reverse; }
+
+  /* Confirm buttons */
+  .confirm-btns, .rq-confirm__actions, .ch-confirm__actions { flex-direction: row-reverse; }
+
+  /* User chip */
+  .cs-user-chip { flex-direction: row-reverse; }
+
+  /* Filter tags */
+  .gp-filter-tag { flex-direction: row-reverse; }
+
+  /* Charter back button */
+  .ch-back-btn { flex-direction: row-reverse; }
+
+  /* Stats */
+  .rq-stats, .ch-stats { flex-direction: row-reverse; }
+}
